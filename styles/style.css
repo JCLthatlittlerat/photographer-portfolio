@@ -3,3 +3,37 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+
+.main-nav{
+   border: 1px solid black;
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 5%;
+   padding-right: 7%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   width: -webkit-fill-available;
+}
+.logo{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FC4545;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.lists{
+    display: flex;
+    gap: 10%;
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
