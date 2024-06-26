@@ -107,3 +107,17 @@
     height: 380px;
     border-radius: 24px;
 }
+/* ==================================================================== */
+.main-footer{
+    width: -webkit-fill-available;
+    background-color: #FC4545;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.socials{
+display: flex;
+gap: 10px;
+}
