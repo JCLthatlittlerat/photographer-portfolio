@@ -40,7 +40,7 @@
 .mainContainer{
     padding-left: 3%;
     padding-right: 3%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .groupOne{
     display: flex;
