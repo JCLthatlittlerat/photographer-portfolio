@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.main-nav{
+   /* position: absolute; */
+   display: flex;
+   justify-content: space-between;
+   padding-left: 3%;
+   padding-right: 7%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   width: -webkit-fill-available;
+}
+.logo{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FC4545;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.lists{
+    display: flex;
+    gap: 10%;
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+/* =================================================================================================== */
+
+.mainContainer{
+    display: flex;
+    padding: 3%;
+}
+.formContainer{
+    width: 70%;
+}
+.formDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.formTitle{
+    font-size: 24px;
+    margin-bottom: 4%;
+}
+.formSubTitle{
+    font-size: 18px;
+    padding-right: 20%;
+    margin-bottom: 4%;
+}
+.name{
+    display: flex;
+}
+.fnameContainer{
+    width: 50%;
+    margin-right: 2%;
+}
+.lnameContainer{
+    width: 50%;
+}
+
+.fname,.lname{
+    width: -webkit-fill-available;
+    font-size: 18px;
+    margin-bottom: 5%;
+    margin-top: 4%;
+    padding-top: 2%;
+}
+.email,.subject{
+    width: -webkit-fill-available;
+    font-size: 18px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+
+.message{
+    width: -webkit-fill-available;
+    font-size: 18px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding-top: 7%;
+}
+.submitBtn{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 1% 3.5%;
+    border: none;
+    font-weight: lighter;
+}
+
+
+
+.rightDetails{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formImg{
+    background: url(/img/jason-leung-wHddViTmSvA-unsplash\ 2.png);
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+}
+.tittleDetail{
+    display: flex;
+    align-self: flex-start;
+    padding-left: 12%;
+    margin-top: 3%;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================================== */
+.main-footer{
+    width: -webkit-fill-available;
+    background-color: #FC4545;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.socials{
+display: flex;
+gap: 10px;
+}
