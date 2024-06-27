@@ -3,8 +3,12 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+.scroll-container::-webkit-scrollbar {
+    display: none;
+  }
 html {
     scroll-behavior: smooth;
+    -ms-overflow-style: none
   }
 
 .main-nav{
@@ -120,13 +124,20 @@ html {
     height: 450px;
     border-radius: 20px;
 }
-.tittleDetail{
-    display: flex;
-    align-self: flex-start;
-    padding-left: 12%;
-    margin-top: 3%;
+.littleDetail{
+    margin-right: auto;
+    padding-left: 15%;
+    padding-top: 3%;
     color: grey;
+    /* display: flex;
+    align-self: flex-start; */
+    /* padding-left: 12%;
+    margin-top: 3%;
+    color: grey; */
 }
+
+
+
 
 
 
