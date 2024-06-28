@@ -124,3 +124,72 @@ html {
 display: flex;
 gap: 10px;
 }
+
+
+
+
+
+
+
+
+/* ======================================================================================= */
+@media screen and ( width<=425px ) {
+    .logo{
+        font-size: 32px;
+    }
+    .nav-list{
+display: none;
+        
+    }
+    /* .groupOne{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .upperGroup,.lowerGroup{
+        display: flex;
+        flex-direction: column;
+    }
+    .UpperItemOne,.UpperItemTwo,.UpperItemThree,.LowerItemOne,.LowerItemTwo,.LowerItemThree{
+        width: -webkit-fill-available;
+    }
+    
+    .UpperItemOne,.UpperItemTwo,.LowerItemOne,.LowerItemTwo{
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (425px < width <= 599px ) {
+    .logo{
+        font-size: 32px;
+    }
+    .nav-list{
+        display: none;
+    }
+}
+@media screen and (599px < width <= 768px ) {
+    .logo{
+        font-size: 36px;
+    }
+    .nav-list{
+        margin-right: 2%;
+        font-size: small;
+    }
+}
+
+@media screen and (768px < width < 1440px) {
+    .nav-list{
+        margin-right: 2%;
+    }
+}
+@media screen and (width > 1440px) {
+    .logo{
+        font-size: 5rem;
+    }
+    .nav-list{
+        font-size: 1.7rem;
+        margin-right: 2%;
+    }
+    .main-nav{
+        padding-bottom: 0px;
+    }
+}
