@@ -49,6 +49,12 @@ padding: 4%;
     display: flex;
     column-gap: 5%;
 }
+.Img{
+    background-size: cover;
+    width: 608px;
+    height: 406px;
+    border-radius: 20px;
+}
 .Img1{
     background: url(/img/hanson-lu-gGgoDJRD2WM-unsplash\ 2.png);
     background-size: cover;
@@ -81,10 +87,24 @@ padding: 4%;
 .headline{
     font-size: 24px;
     font-weight: bold;
-
+    
 }
 .parOne, .parTwo, .parThree{
     font-size: 18px;
+}
+/* ==================================================================== */
+.main-footer{
+    width: -webkit-fill-available;
+    background-color: #FC4545;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.socials{
+display: flex;
+gap: 10px;
 }
 
 
@@ -98,7 +118,33 @@ padding: 4%;
         display: none;
     }
     .upperPart,.lowerPart,.details{
-        display: flex;flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .main-footer{
+
+    }
+    .Img1,.Img2{
+        margin-top: 5%;
+        width: 100%;
+        background-size: cover;
+        background-position-x: center;
+        margin-bottom: 5%;
+        height: 220px;
+        background-position-y: center;
+    }
+    .Img2{
+        order: 1;
+    }
+    .headline{
+        font-size: 17px;
+    }
+    .parOne,.parTwo,.parThree{
+        font-size: 14px;
+    }
+    .bodyContainer{
+        width: fit-content;
     }
 }
 /* tablet */
@@ -112,6 +158,10 @@ padding: 4%;
     .Img1,.Img2{
         background-position-x: center;
     }
+    .upperPart,.lowerPart{
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (599px < width <= 768px ) {
@@ -124,6 +174,10 @@ padding: 4%;
     }
     .Img1,.Img2{
         background-position-x: center;
+    }
+    .upperPart,.lowerPart{
+        display: flex;
+        align-items: center;
     }
 }
 /* laptop and drsktop */
@@ -147,6 +201,31 @@ padding: 4%;
     .main-nav{
         padding-bottom: 0px;
     }
+    .Img1,.Img2{
+    height: 715px;
+    background-size: cover;
+    width: 60%;
+    border-radius: 20px;
+    background-position-x: center;
+    background-position-y: center;
+    }
+    .headline{
+        font-size: 40px;
+    }
+    .parOne,.parTwo,.parThree{
+        font-size: 30px;
+    }
+    .details{
+        padding-top: 5%;
+    }
+    .main-footer{
+        height: 150px;
+    }
+    #Instagram--Streamline-Atlas,#Tiktok--Streamline-Atlas,#Youtube--Streamline-Atlas,#Pinterest-Logo--Streamline-Ultimate{
+        height: 40px;
+        width: 40px;
+    }
+
 }
 
 
@@ -170,18 +249,3 @@ padding: 4%;
 
 
 
-
-/* ==================================================================== */
-.main-footer{
-    width: -webkit-fill-available;
-    background-color: #FC4545;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5%;
-}
-.socials{
-display: flex;
-gap: 10px;
-}
