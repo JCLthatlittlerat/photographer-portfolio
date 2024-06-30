@@ -136,22 +136,6 @@ html {
     color: grey; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==================================================================== */
 .main-footer{
     width: -webkit-fill-available;
@@ -165,4 +149,93 @@ html {
 .socials{
 display: flex;
 gap: 10px;
+}
+
+
+/* ======================================================================================= */
+/* mobile */
+@media screen and ( width<=425px ) {
+    .logo{
+        font-size: 32px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .main-footer{
+
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    +
+    
+}
+
+
+/* tablet */
+@media screen and (425px < width <= 599px ) {
+    .logo{
+        font-size: 32px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .formImg{
+        width: 100px;
+        height: 200px;
+        background-position-x: center;
+        background-position-y: center;
+    }
+    .formImg{
+        order: 1;
+    }
+    
+}
+
+@media screen and (599px < width <= 768px ) {
+    .logo{
+        font-size: 36px;
+    }
+    .nav-list{
+        margin-right: 2%;
+        font-size: small;
+    }
+    .formImg{
+        width: 150px;
+        height: 250px;
+        background-position-x: center;
+        background-position-y: center;
+    }
+    
+}
+/* laptop and drsktop */
+@media screen and (768px < width < 1440px) {
+    .nav-list{
+        margin-right: 2%;
+    }
+    
+}
+/* 4K huge screens */
+@media screen and (width > 1440px) {
+    .logo{
+        font-size: 5rem;
+    }
+    .nav-list{
+        font-size: 1.7rem;
+        margin-right: 2%;
+    }
+    .main-nav{
+        padding-bottom: 0px;
+    }
+    
+    .main-footer{
+        height: 150px;
+    }
+    #Instagram--Streamline-Atlas,#Tiktok--Streamline-Atlas,#Youtube--Streamline-Atlas,#Pinterest-Logo--Streamline-Ultimate{
+        height: 40px;
+        width: 40px;
+    }
+
 }
