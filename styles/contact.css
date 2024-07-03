@@ -249,12 +249,28 @@ gap: 10px;
     }
     
 }
-/* laptop and drsktop */
-@media screen and (768px < width < 1440px) {
+/* laptop and desktop */
+@media screen and (768px < width <= 1440px) {
     .nav-list{
         margin-right: 2%;
     }
-    
+    .rightDetails{
+        margin-left: 5%;
+    }
+    .formImg{
+        background-position-x: center;
+        background-position-y: center;
+        width: 240px;
+    }
+    .formTitle{
+        font-size: 32px;
+    }
+    .formSubTitle{
+        font-size: 22px;
+    }
+    .fname,.lname,.email,.subject,.message{
+        font-size: 20px;
+    }
 }
 /* 4K huge screens */
 @media screen and (width > 1440px) {
@@ -268,13 +284,30 @@ gap: 10px;
     .main-nav{
         padding-bottom: 0px;
     }
-    
+    .formTitle{
+        font-size: 52px;
+    }
+    .formSubTitle{
+        font-size: 38px;
+    }
+    .fname,.lname,.email,.subject,.message,.submitBtn{
+        font-size: 32px;
+    }
+    .formImg{
+        width: 440px;
+        height: 700px;
+        margin-left: 5%;
+    }
+    .littleDetail{
+        font-size: x-large;
+        padding-left: 25%;
+    }
     .main-footer{
         height: 150px;
     }
     #Instagram--Streamline-Atlas,#Tiktok--Streamline-Atlas,#Youtube--Streamline-Atlas,#Pinterest-Logo--Streamline-Ultimate{
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
     }
 
 }

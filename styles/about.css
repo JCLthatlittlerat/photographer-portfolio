@@ -162,6 +162,9 @@ gap: 10px;
         display: flex;
         align-items: center;
     }
+    .details{
+        width: 70%;
+    }
 }
 
 @media screen and (599px < width <= 768px ) {
@@ -178,6 +181,9 @@ gap: 10px;
     .upperPart,.lowerPart{
         display: flex;
         align-items: center;
+    }
+    .details{
+        width: 70%;
     }
 }
 /* laptop and drsktop */
