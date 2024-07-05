@@ -155,11 +155,44 @@ gap: 10px;
 /* ======================================================================================= */
 /* mobile */
 @media screen and ( width<=425px ) {
-    .logo{
-        font-size: 32px;
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+    top: 20px;
+
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
     }
     .nav-list{
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -200px;  /* Hide the sidebar initially */
+        width: 150px;
+        height: 100%;
+        background-color: #FC4545;
+        color: white;
+        overflow-x: hidden;
+        transition: left 0.3s;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 25%;
+        row-gap: 20px;
+    }
+    #menu-toggle:checked + .menu-icon + .nav-list {
+        left: 0; /* Show the sidebar when menu icon is clicked */
+    }
+    
+
+    .logo{
+        font-size: 32px;
     }
     .mainContainer{
         display: flex;
@@ -213,13 +246,45 @@ gap: 10px;
 }
 
 
-/* tablet */
+/* small tablet */
 @media screen and (425px < width <= 599px ) {
-    .logo{
-        font-size: 32px;
+    /* the side bar  */
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        position: absolute;
+        right: 20px;
+        font-weight: bold;
+        top: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1;
     }
     .nav-list{
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -200px;  /* Hide the sidebar initially */
+        width: 200px;
+        height: 100%;
+        background-color: #FC4545;
+        color: white;
+        overflow-x: hidden;
+        transition: left 0.3s;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 25%;
+        row-gap: 20px;
+    }
+    #menu-toggle:checked + .menu-icon + .nav-list {
+        left: 0; /* Show the sidebar when menu icon is clicked */
+    }
+
+    .logo{
+        font-size: 32px;
     }
     .formImg{
         width: 100px;
@@ -232,8 +297,14 @@ gap: 10px;
     }
     
 }
-
+/* wide tablet */
 @media screen and (599px < width <= 768px ) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
     .logo{
         font-size: 36px;
     }
@@ -251,6 +322,12 @@ gap: 10px;
 }
 /* laptop and desktop */
 @media screen and (768px < width <= 1440px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
     .nav-list{
         margin-right: 2%;
     }
@@ -274,6 +351,12 @@ gap: 10px;
 }
 /* 4K huge screens */
 @media screen and (width > 1440px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
     .logo{
         font-size: 5rem;
     }
