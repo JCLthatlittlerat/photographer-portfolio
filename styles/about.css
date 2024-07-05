@@ -122,9 +122,9 @@ gap: 10px;
         flex-direction: column;
         width: fit-content;
     }
-    .main-footer{
-
-    }
+    /* .main-footer{
+    display: contents;
+    } */
     .Img1,.Img2{
         margin-top: 5%;
         width: 100%;
