@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.main-nav{
+   /* position: absolute; */
+   display: flex;
+   justify-content: space-between;
+   padding-left: 3%;
+   padding-right: 7%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   width: -webkit-fill-available;
+}
+.logo{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FC4545;
+}
+.nav-home{
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.lists{
+    display: flex;
+    gap: 10%;
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+/* =================================================================================================== */
+.mainContainer{
+    padding-left: 3%;
+    padding-right: 3%;
+    /* border: 1px solid black; */
+}
+.groupOne{
+    display: flex;
+    flex-direction: column;
+}
+.groupTwo{
+    display: flex;
+    flex-direction: column;
+}
+
+.upperGroup{
+    display: flex;
+    gap: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.UpperItemOne{
+    background: url(/img/jason-leung-wHddViTmSvA-unsplash\ 1.png);
+    background-size: cover;
+    width: 33%;
+    height: 380px;
+    border-radius: 24px;
+}
+.UpperItemTwo{
+    background: url(/img/clark-van-der-beken-chcyjyRQV74-unsplash\ 1.png);
+    background-size: cover;
+    width: 33%;
+    height: 380px;
+    border-radius: 24px;
+}
+.UpperItemThree{
+    background: url(/img/jason-leung-wHddViTmSvA-unsplash\ 1.png);
+    background-size: cover;
+    width: 33%;
+    height: 380px;
+    border-radius: 24px;
+}
+
+
+.lowerGroup{
+    display: flex;
+    gap: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.LowerItemOne{
+    background: url(/img/clark-van-der-beken-chcyjyRQV74-unsplash\ 1.png);
+    background-size: cover;
+    width: 33%;
+    height: 380px;
+    border-radius: 24px;
+}
+.LowerItemTwo{
+    background: url(/img/jason-leung-wHddViTmSvA-unsplash\ 1.png);
+    background-size: cover;
+    width: 33%;
+    height: 380px;
+    border-radius: 24px;
+}
+.LowerItemThree{
+    background: url(/img/clark-van-der-beken-chcyjyRQV74-unsplash\ 1.png);
+    background-size: cover;
+    width: 33%;
+    height: 380px;
+    border-radius: 24px;
+}
+/* ==================================================================== */
+.main-footer{
+    width: -webkit-fill-available;
+    background-color: #FC4545;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+}
+.socials{
+display: flex;
+gap: 10px;
+}
+
+
+
+
+
+
+
+
+/* ======================================================================================= */
+/* mobile mode */
+@media screen and ( width<=425px ) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+    top: 10px;
+
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: -200px;  /* Hide the sidebar initially */
+        width: 150px;
+        height: 100%;
+        background-color: #FC4545;
+        color: white;
+        overflow-x: hidden;
+        transition: left 0.3s;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 25%;
+        row-gap: 20px;
+    }
+    #menu-toggle:checked + .menu-icon + .nav-list {
+        left: 0; /* Show the sidebar when menu icon is clicked */
+    }
+    
+    .logo{
+        font-size: 32px;
+    }
+    /* .nav-list{
+    display: none;
+        
+    } */
+    /* .groupOne{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .upperGroup,.lowerGroup{
+        display: flex;
+        flex-direction: column;
+    }
+    .UpperItemOne,.UpperItemTwo,.UpperItemThree,.LowerItemOne,.LowerItemTwo,.LowerItemThree{
+        width: -webkit-fill-available;
+    }
+    
+    .UpperItemOne,.UpperItemTwo,.LowerItemOne,.LowerItemTwo{
+        margin-bottom: 3%;
+    }
+}
+/* small tablet mode */
+@media screen and (425px < width <= 599px ) {
+    /* the side bar  */
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        position: absolute;
+        right: 20px;
+        font-weight: bold;
+        top: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: -200px;  /* Hide the sidebar initially */
+        width: 200px;
+        height: 100%;
+        background-color: #FC4545;
+        color: white;
+        overflow-x: hidden;
+        transition: left 0.3s;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 25%;
+        row-gap: 20px;
+    }
+    #menu-toggle:checked + .menu-icon + .nav-list {
+        left: 0; /* Show the sidebar when menu icon is clicked */
+    }
+
+    .logo{
+        font-size: 32px;
+    }
+    .UpperItemOne,.UpperItemTwo,.UpperItemThree,.LowerItemOne,.LowerItemTwo,.LowerItemThree{
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
+}
+/* wide tablet mode  */
+@media screen and (599px < width <= 768px ) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .logo{
+        font-size: 36px;
+    }
+    .nav-list{
+        margin-right: 2%;
+        font-size: small;
+    }
+    .UpperItemOne,.UpperItemTwo,.UpperItemThree,.LowerItemOne,.LowerItemTwo,.LowerItemThree{
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
+}
+/* laptop and desktop mode */
+@media screen and (768px < width < 1440px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .nav-list{
+        margin-right: 2%;
+    }
+}
+/* 4k huge screen */
+@media screen and (width > 1440px) {
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .logo{
+        font-size: 5rem;
+    }
+    .nav-list{
+        font-size: 1.7rem;
+        margin-right: 2%;
+    }
+    .main-nav{
+        padding-bottom: 0px;
+    }
+    .main-footer{
+        height: 150px;
+    }
+    #Instagram--Streamline-Atlas,#Tiktok--Streamline-Atlas,#Youtube--Streamline-Atlas,#Pinterest-Logo--Streamline-Ultimate{
+        height: 45px;
+        width: 45px;
+    }
+}
