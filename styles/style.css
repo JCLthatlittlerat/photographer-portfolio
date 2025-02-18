@@ -22,6 +22,9 @@ html {
     font-weight: bold;
     color: #FC4545;
 }
+.nav-home{
+    text-decoration: none;
+}
 .nav-list{
     display: flex;
     align-items: center;

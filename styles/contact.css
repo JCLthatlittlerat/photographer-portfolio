@@ -31,6 +31,10 @@ html {
     align-items: center;
 }
 
+.nav-home{
+    text-decoration: none;
+}
+
 .lists{
     display: flex;
     gap: 10%;
@@ -178,6 +182,9 @@ gap: 10px;
         color: white;
         overflow-x: hidden;
         transition: left 0.3s;
+    }
+    .nav-home{
+        text-decoration: none;
     }
     .lists{
         display: flex;
